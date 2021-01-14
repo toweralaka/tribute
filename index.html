@@ -3,215 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://kit.fontawesome.com/e05eac4cb7.js" crossorigin="anonymous"></script>
+    <title>Tribute To Mother</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <style>
-        .container {
-            margin-top: -40px;
-            font-size: 1.7em;
+        #main {
+            height: auto;
+            padding-bottom: 2%;
+            line-height: 2;
+            font-size: larger;
+            font-family: 'Langar', cursive, sans-serif;
+            color: #572009;
+            background: linear-gradient(30deg, #E7B6E7,#f3d82b, #FFB3FF);
+            /* (30deg, #E7B6E7,#ff9eff, #FFB3FF); */
+        }
+        .title, #img-div, #tribute-info {
+            margin: auto;
+        }
+        .title {
             text-align: center;
+            background-color: hsl(300,100%,75%);/* #ff007f; */
+            box-shadow: 5px 10px 20px #572009;
+            padding: 1% 2%;
+            }
+        #title {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 8vmin;
         }
-        #navbar {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 100%;
-            
-        }
-        li {
-            width: 25%;
-        }
-        .nav-link {
-            color: white;
-            font-weight: 700;
-        }
-        .nav-link:hover {
-            color: blue;
-            
-        }
-        main {
-            top: 0;
-        }
-        section {
+        #image {
+            max-width: 100%;
+            display: block;
+            width: 90%;
+            height:auto;
+            margin: auto;
+            }
+        #img-div {
+            text-align: center;
+            object-fit: none;
             width: 90%;
             margin: auto;
-        }
-        #welcome-section {
-            text-align: center;
-            width: 100%;
-            /* margin-top: 100px; */
-            color: seashell;
-            height: 100vh;
-            background: linear-gradient(rgba(134, 90, 167, 0.4), rgba(177, 57, 57, 0.4)), url("https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2");
-            /* background-color: rgba(177, 57, 57, 0.4); */
-        }
-        #intro {
-            padding-top: 25%;
-            font-weight: 900;
-            color: seashell;
-        }
-        .about-item {
-            text-align: left;
-        }
-        #project-tiles {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            row-gap: 5px;
-            /* width: 90%;
-            margin: auto; */
-            justify-content: space-around;
-        }
-        .project-tile {
-            width: 80%;
-            height: 50%;
+            background-color: bisque;
+            }
+        #tribute-info {
             margin: auto;
+            width: 60%;
+            text-align: justify;
         }
-        figure {
+        #footer {
             text-align: center;
-            width: 100%;
-            margin: auto;
-        }
-        img {
-            display: block;
-            margin: auto;
-            width: 100%;
-            height: auto;
-        }
-        a {
-            text-decoration: none;
-        }
-        .row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        footer {
-            margin-top: 10%;
-            text-align: center;
-        }
-        @media (max-width: 350px) {
-            .container {
-                font-size: 1em;
             }
-            #intro {
-                padding-top: 50%;
-            }
-            nav {
-                text-align: left;
-            }
-            ul {
-                justify-content: flex-start;
-                
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <section id="welcome-section">
-                <h1 id="intro">Software Developer</h1>
-                <p>On Duty</p>
-            </section>
-            <section id="about">
-                <h2>I work hard, I play hard</h2>
-                <p class="about-item">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor harum ab fuga delectus voluptatibus similique, sed est? Qui voluptatem provident asperiores eligendi, deleniti inventore voluptatum? Vero distinctio fuga repellendus?
-                    <a id="profile-link" target="_blank" href="https://codepen.io/toweralaka/pen/eYdVMLQ">
-                        My Codepen Profile
-                    </a>
-                </p>
-                <p class="about-item">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sit totam dolorem labore? Voluptates sit voluptatem harum labore quis iure aperiam eligendi esse expedita ea, possimus necessitatibus dolor, commodi ex.
-                </p>
-            </section>
-            <section id="projects">
-                <h2>Some projects I worked on</h2>
-                <div id="project-tiles">
-                    <div class="project-tile">
-                        <figure class="project-figure">
-                            <a href="https://codepen.io/toweralaka/pen/rNMpMGe" class="project-link">
-                                <img alt="" src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" class="project-img" />
-                                <figcaption class="project-title">Tribute Page</figcaption>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
-                        <figure class="project-figure">
-                            <a href="#" class="project-link">
-                                <img alt="" src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" class="project-img" />
-                                <figcaption class="project-title">...</figcaption>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
-                        <figure class="project-figure">
-                            <a href="#" class="project-link">
-                                <img alt="" src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" class="project-img" />
-                                <figcaption class="project-title">...</figcaption>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
-                        <figure class="project-figure">
-                            <a href="#" class="project-link">
-                                <img alt="" src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" class="project-img" />
-                                <figcaption class="project-title">...</figcaption>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Let us collaborate</h2>
-                <div class="row">
-                    <div>
-                        <a href="#">
-                            <i class="fas fa-phone"></i> Phone
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fas fa-at"></i> Email
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fab fa-github"></i> Github
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <i class="fas fa-globe"></i> Website
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>Copyright 2020</footer>
-    </div>
+    <main id="main" class="container">
+        <header class="title">
+            <h1 id="title">Tribute To Dead Mothers</h1>
+            <p>For being friends, sisters, parents, teachers, guide, confidants,...</p>
+        </header>
+        <figure id="img-div">
+            <img alt="" src="https://international-alliance-of-women.s3.amazonaws.com/wp-content/uploads/2013/10/19200503/Africa-Benin-mother-child-1.jpeg" id="image" />
+            <figcaption id="img-caption">A mother backing her baby</figcaption>
+        </figure>
+        <div id="tribute-info">
+            <p>
+                The language of motherhood knows no borders. There is nothing that a mother will not dare or do for <br>
+                her children and family. We often don’t realize just how much they love us, we never <br>
+                really appreciate how much they’ve done for us until they are no more. The loss of a mother <br>
+                is very painful and sad.<br>
+            </p>
+            <p>
+                My mum was such a loving wife, a caring mum, fantastic sister, a beloved daughter and the best friend anyone could wish for.<br>
+                “My mum would sit down and listen to anything that people were saying. She had time for anyone and everyone.<br>
+                “Anyone would wish for a friend like my mum.<br>
+                “I hope life is better where you are now my beautiful angel. I miss you more than you know and my heart aches <br>
+                everytime i remeber you are gone. Goodbye Mum. Until we meet to part no more.<br>
+            </p>
+            <hr>
+            <p>
+                No words can describe the feeling when I realize that you are no more. It’s a feeling like no other. No one can really <br>
+                understand the pain of going through life without such an important part of you.<br>
+                You passed on just too soon. Most times it feels like it was yesterday, and other times it feels like it’s been hundreds of years since <br>
+                I last saw your warm and bubbly face.I haven’t the slightest clue where you could be in the afterlife, but I really wish I could see <br>
+                you again. The only thing I remember is your persistence and fiery attitude. As a single mother, you provided everything we <br>
+                needed. I long for your warm hugs every time my heart is broken. I often wish you could come back and see my beautiful sister. She’s <br>
+                strong, just like you. She’s overcome so much since you left. I wish you could see my son.The only memory I hold is the withering <br>
+                photographs and the faint memories. I remember getting into trouble for giving my little brother wedgies, or for eating too much <br>
+                candy. I often wonder what lessons you’d have taught me if you were still around. Could I have missed out on something that others <br>
+                get from their mothers? I’ll never know.<br>
+                I wish i had the chance to say goodbye – one last hug. I wish your life had been easier. You had to endure a lot for us. But you’d <br>
+                have been proud of me on my college graduation. I wish you were around on my wedding day, when I walked down the aisle.<br>
+<br>
+                I hope you are in a better place looking down on us and nodding your head in approval. I want to tell you and the world you’ll always <br>
+                be in our hearts forever. I love you mom!!<br>
+            </p>
+            <hr>
+            <p>
+                If roses grow in heaven,<br>
+                Lord please pick a bunch for me,<br>
+                Place them in my Mother’s arms<br>
+                and tell her they’re from me.Tell her I love her and miss her,<br>
+                and when she turns to smile,<br>
+                place a kiss upon her cheek<br>
+                and hold her for awhile.Because remembering her is easy,<br>
+                I do it every day,<br>
+                but there’s an ache within my heart<br>
+                that will never go away. Adieu Mum!
+            </p>
+            <hr>
+        </div>
+        <footer id="footer">
+            <p>
+                Click here to <a id="tribute-link" target="_blank" href="https://www.sampleposts.com/tribute-to-late-mother/">learn more about mothers</a>
+            </p>
+            Copyright 2020
+        </footer>
+    </main>
+    
+
 </body>
 </html>
